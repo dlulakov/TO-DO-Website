@@ -1,0 +1,9 @@
+
+
+TO DO :
+----------------------
+
+ -> Make site safe states
+ -> Make Login/Make account;
+ -> Make Coockies
+ -> Make the checkbox bigger;

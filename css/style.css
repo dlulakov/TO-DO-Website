@@ -1,0 +1,52 @@
+body{
+    font-family: monospace; 
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+h1{
+    color: red;
+    font-size: 3em;
+}
+#theList {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+#theList div{
+    margin: 10px 0;
+}
+#form{
+    display: flex;
+    justify-content: space-between;
+}
+#text {
+    height: 30px;
+    width: 70%;
+    font-size:1.5em;
+    
+}
+#click{
+    height: 35px;
+    width: 20%;
+    font-size: 1.3em;
+}
+#date{
+    color: black;
+}
+#list{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+#list div{
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+.checkbox:checked + label{
+    text-decoration: line-through; 
+}
+label{
+    font-size:2em;
+}
+
