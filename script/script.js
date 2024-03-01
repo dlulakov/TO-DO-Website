@@ -1,9 +1,31 @@
+async function displayList() {
+    let url = "../data/ids.txt";
+    let response = await fetch(url);
+    let text = await response.text();
+    textt = text;
+    console.log(text);
+}
+if(!localStorage.getItem("id")){
+   setId();
+}else {
+    displayList();
+}
+function setId(){
+    let id = Math.floor(Math.random() * Math.floor(Math.random() * Date.now()));
+    localStorage.setItem("id",id);
+}
+
+
+
+
+
+
 let elemDate = new Date();
 let elem = document.getElementById("date");
-let mounth = parseInt(elemDate.getMonth()) + 1;
-let date = getDay(elemDate.getDay())+" "+ elemDate.getDate() +"."+ mounth+"."+ elemDate.getFullYear();
+let month = parseInt(elemDate.getMonth()) + 1;
+let date = getDay(elemDate.getDay())+" "+ elemDate.getDate() +"."+ month+"."+ elemDate.getFullYear();
 elem.innerHTML = date;
-        
+
 
 
 
@@ -24,7 +46,7 @@ function add(){
 }
 
 function addEnter(event){
-    if(event.key == "Enter"){
+    if(event.key === "Enter"){
         document.getElementById("click").click();
     }
 }
