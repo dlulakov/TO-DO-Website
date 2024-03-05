@@ -39,14 +39,29 @@ h1{
     flex-direction:column;
     justify-content: space-around;
 }
-#list div{
+#list #row{
     border-bottom: 1px solid #000;
     padding: 10px;
 }
-.checkbox:checked + label{
+.check:checked + label{
     text-decoration: line-through; 
 }
 label{
     font-size:2em;
 }
+.row{
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+}
+.delete{
+    width: 30px;
+    height: 30px;
+    padding:5px;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+#counterDiv h2{
+    font-size: 2em;
 
+}
