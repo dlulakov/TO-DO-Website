@@ -52,7 +52,7 @@ label{
 .row{
     display: flex;
     justify-content:space-between;
-    align-items: baseline;
+    align-items: center;
 }
 .delete{
     width: 30px;
@@ -65,3 +65,30 @@ label{
     font-size: 2em;
 
 }
+input[type = "checkbox"]{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.chekmark{
+    margin-left: 10px;
+}
+#login{
+    display: flex;
+    justify-content:space-aroun
+}
+#login button{
+    width: 20%;
+    height:  30px;
+}
+#login button a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+}
+
+

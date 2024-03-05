@@ -1,3 +1,12 @@
+let elemDate = new Date();
+let elem = document.getElementById("date");
+let month = parseInt(elemDate.getMonth()) + 1;
+let date = getDay(elemDate.getDay())+" "+ elemDate.getDate() +"."+ month+"."+ elemDate.getFullYear();
+elem.innerHTML = date;
+
+
+
+
 if(!localStorage.getItem("list")){
     setId();
 }else {
@@ -15,11 +24,6 @@ function setId(){
 
 
 
-let elemDate = new Date();
-let elem = document.getElementById("date");
-let month = parseInt(elemDate.getMonth()) + 1;
-let date = getDay(elemDate.getDay())+" "+ elemDate.getDate() +"."+ month+"."+ elemDate.getFullYear();
-elem.innerHTML = date;
 update();
 
 
@@ -93,9 +97,11 @@ function add(){
         button.className = "delete";
         button.setAttribute("onclick","deleteElement(this)");
         label.appendChild(textNode);
+        label.className = "chekmark";
         input.type = "checkbox";
         input.className = "checkbox";
         input.setAttribute("onclick","check(this)");
+        toDo.className = "container";
         toDo.appendChild(input);
         toDo.appendChild(label);
         div.appendChild(toDo);

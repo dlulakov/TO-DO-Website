@@ -3,8 +3,15 @@
 TO DO :
 ----------------------
 
- -> Make site safe states -------- COMPLETED
- -> Make counter ----------------- COMPLETED
  -> Make Login/Make account;
  -> Make Coockies
- -> Make the checkbox bigger;
+
+
+
+
+ COMPLETED:
+ ---------------------
+
+ -> Make site safe states -------- COMPLETED
+ -> Make counter ----------------- COMPLETED
+ -> Make the checkbox bigger ----- COMPLETED
